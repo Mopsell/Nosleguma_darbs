@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#fa8e47" text="#fff">
+    <ul>
+        {% for post in posts %}
+        <li>
+            <h2>{{ post.name }}</h2>
+            <small>{{ post.grades }}</small>
+            <p>{{ post.average_grade }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>
